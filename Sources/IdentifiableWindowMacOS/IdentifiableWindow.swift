@@ -39,10 +39,10 @@ public extension IdentifiableWindow {
 // MARK: -
 
 @available(macOS 14.0, *)
-public protocol UtilityWindow: IdentifiableWindow {}
+public protocol IdentifiableUtilityWindow: IdentifiableWindow {}
 
 @available(macOS 14.0, *)
-extension UtilityWindow {
+extension IdentifiableUtilityWindow {
     var resizability: WindowResizability { .contentSize }
     var windowStyle: HiddenTitleBarWindowStyle { .hiddenTitleBar }
 }
