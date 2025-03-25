@@ -42,7 +42,7 @@ public extension IdentifiableWindow {
 public protocol IdentifiableUtilityWindow: IdentifiableWindow {}
 
 @available(macOS 14.0, *)
-extension IdentifiableUtilityWindow {
+public extension IdentifiableUtilityWindow {
     var resizability: WindowResizability { .contentSize }
     var windowStyle: HiddenTitleBarWindowStyle { .hiddenTitleBar }
 }
